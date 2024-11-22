@@ -1,0 +1,38 @@
+<!-- Titas Gedgaudas | EF-23/2 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/overlay.css">
+    <title>ATM Interface</title>
+</head>
+<body>
+    <div class="atm-container">
+        <div class="screen" id="atm-screen">
+            <div id="pin-screen">
+                <h1 class="title">ATM</h1>
+                <p class="subtext">Enter Your PIN</p>
+                <div class="pin-input-area">
+                    <input type="password" id="pin-input" maxlength="4" placeholder="****">
+                    <button id="pin-submit">Submit</button>
+                </div>
+                <p id="error-message"></p>
+            </div>
+
+            <div id="main-menu" class="hidden">
+                <h1 class="title">ATM Menu</h1>
+                <div class="menu-options">
+                    <button class="menu-btn" onclick="window.location.href='assets/pages/withdraw.html'">Withdraw</button>
+                    <button class="menu-btn" onclick="window.location.href='assets/pages/check_balance.html'">Check Balance</button>
+                    <button class="menu-btn" onclick="window.location.href='assets/pages/deposit.html'">Deposit</button>
+                    <button id="exit-btn" class="menu-btn">Exit</button>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

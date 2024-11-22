@@ -1,0 +1,174 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000000;
+    color: #00ff00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.atm-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.screen {
+    text-align: center;
+    animation: fadeIn 1.2s ease-out;
+}
+
+.title {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+
+.subtext {
+    font-size: 1.2rem;
+    color: #00aaff;
+    margin-bottom: 2rem;
+}
+
+/* PIN input and Submit button */
+.pin-input-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Remove arrows from number input fields */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input {
+    padding: 5px;
+    width: 200px;
+    border: none;
+    border-bottom: 2px solid #00ff00;
+    background: none;
+    font-size: 1.5rem;
+    color: #00ff00;
+    text-align: center;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2px solid #ff00ff;
+}
+
+button {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    background-color: #00ff00;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #f02e2e;
+    color: #fff;
+}
+
+.menu-options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.menu-btn {
+    width: 300px;
+    margin: 0 auto;
+    padding: 15px;
+    border: 2px solid #00ff00;
+    background: none;
+    color: #00ff00;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu-btn:hover {
+    background-color: #2be44a;
+    color: #fff;
+}
+
+/* Withdraw */
+
+.withdraw-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#withdraw-message {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+
+/* Withdraw */
+
+
+/* Deposit */
+
+.deposit-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#deposit-message {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* Deposit */
+
+
+/* Hide elements when not active */
+.hidden {
+    display: none;
+}
+
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

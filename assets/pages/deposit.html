@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/overlay.css">
+    <title>ATM Deposit</title>
+</head>
+<body>
+    <div class="atm-container">
+        <div class="screen" id="deposit-screen">
+            <h1 class="title">Deposit Money</h1>
+            <div class="deposit-area">
+                <p class="subtext">Enter Amount to Deposit:</p>
+                <input type="number" id="deposit-input" placeholder="0" min="1">
+                <button id="deposit-submit">Deposit</button>
+                <button id="back-to-menu">Exit</button>
+                <p id="deposit-message"></p>
+            </div>
+        </div>
+    </div>
+    <script src="../js/global.js"></script>
+    <script src="../js/deposit.js"></script>
+</body>
+</html>

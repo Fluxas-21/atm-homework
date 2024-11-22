@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/overlay.css">
+    <title>ATM Withdraw</title>
+</head>
+<body>
+    <div class="atm-container">
+        <div class="screen" id="withdraw-screen">
+            <h1 class="title">Withdraw Money</h1>
+            <p id="balance-display" class="subtext"></p> <!-- Added balance display -->
+            <div class="withdraw-area">
+                <p class="subtext">Enter Amount to Withdraw:</p>
+                <input type="number" id="withdraw-input" placeholder="0" min="1">
+                <button id="withdraw-submit">Withdraw</button>
+                <button id="back-to-menu">Exit</button>
+                <p id="withdraw-message"></p>
+            </div>
+        </div>
+    </div>
+    <script src="../js/global.js"></script>
+    <script src="../js/withdraw.js"></script>
+</body>
+</html>
